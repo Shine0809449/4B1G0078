@@ -1,0 +1,5 @@
+#include 使用生命名稱空間標準；
+
+int main() { int n; cin >> n;//輸入數字後，就會存儲在之前創建好的n裡 while (n--) { int a1, a2, b1, b2;字符w; cin >> w >> a1 >> a2 >> b1 >> b2；switch (w) { //修改數字名稱或運算方式 case '+': //符合數字或符 cout << a1 + b1 << " " << a2 + b2 << "\n";休息; case '-': cout << a1 - b1 << " " << a2 - b2 << "\n";休息; case '*': cout << a1 * b1 - a2 * b2 << " " << a2 * b1 + a1 * b2 << "\n";休息; case '/': cout << (a1 * b1 + a2 * b2) / (b1 * b1 + b2 * b2) << " " << (a2 * b1 - a1 * b2) / (b1 * b1 + b2 * b2) << "\n";休息;
+
+}
