@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int num01 = 0, num02 = 0,ans=1;
+ cin >> num01 >> num02;
+ int ans_num=0,min=(num01>num02?num02:num01);
+ for (int i = 2; i <= min; i++)
+ {
+  while (num01%i==0 && num02%i==0)
+  {
+   ans *= i; num01 /= i; num02 /= i;
+  }
+ }
+ cout << ans << "\n";
+ return 0;
+}
