@@ -1,0 +1,17 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <algorithm>
+#include<string>
+using namespace std;
+int main() {
+ bool end_is_true = true;
+ string str = "";
+ cin >> str;
+ string str_tmp = str; reverse(str_tmp.begin(), str_tmp.end());
+ if (str_tmp ==str)
+ {
+  cout << "YES\n";
+ }
+ else { cout << "NO\n"; }
+ return 1;
+}
