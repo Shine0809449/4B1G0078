@@ -1,0 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+using namespace std;
+int main() {
+ int num01 = 0, num02 = 0;
+ while (scanf("%d %d", &num01,&num02) != EOF) {
+  //building
+  int** data;
+  data = new int* [num01];
+  for (int i = 0; i < num01; i++)
+  {
+   data[i] = new int[num02];
+  }
+  //code
+  for (int i = 0; i < num01; i++)
+  {
+   for (int j = 0; j < num02; j++)
+   {
+    cin >> data[i][j];
+   }
+  }
+  //print
+  for (int j = 0; j < num02; j++)
+  {
+   for (int i = 0; i < num01; i++)
+   {
+    cout <<(i!=0?" ":"") << data[i][j];
+   }
+   cout << "\n";
+  }
+
+  //free
+  for (int i = 0; i < num01; i++)
+   delete[] data[i];
+  delete[] data;
+ }
+ return 0;
+}
