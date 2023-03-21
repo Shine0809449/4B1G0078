@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int tmp = 0,sum=0;
+ cin >> tmp;
+ for (int i = 3; i <= tmp; i+=3)
+ {
+  sum += i;
+ }
+ cout << sum << "\n";
+ return 0;
+}
